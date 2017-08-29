@@ -1,5 +1,6 @@
 # Itamae::Plugin::Recipe::Scala
 
+[![Gem Version](https://badge.fury.io/rb/itamae-plugin-recipe-scala.svg)](https://badge.fury.io/rb/itamae-plugin-recipe-scala)
 [![wercker status](https://app.wercker.com/status/31977a02aa62b711ed510728a4f04cf6/m/master "wercker status")](https://app.wercker.com/project/byKey/31977a02aa62b711ed510728a4f04cf6)
 
 Itamae plugin to install scala
