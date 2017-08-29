@@ -24,12 +24,3 @@ options[:user] ||= Etc.getlogin
 
 set :host, options[:host_name] || host
 set :ssh_options, options
-
-require "yaml"
-require "itamae/node"
-
-def node
-  return @node if @node
-  hash = YAML.load_file("#{__dir__}/../recipes/node.yml")
-  @node = Itamae::Node.new(hash, Specinfra.backend)
-end
