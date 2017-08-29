@@ -1,8 +1,8 @@
 # Itamae::Plugin::Recipe::Scala
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/itamae/plugin/recipe/scala`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![wercker status](https://app.wercker.com/status/31977a02aa62b711ed510728a4f04cf6/m/master "wercker status")](https://app.wercker.com/project/byKey/31977a02aa62b711ed510728a4f04cf6)
 
-TODO: Delete this and the text above, and describe your gem
+Itamae plugin to install scala
 
 ## Installation
 
@@ -22,22 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Recipe
 
-## Development
+```ruby
+# your recipe
+include_recipe "scala::install"
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+### Node
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/itamae-plugin-recipe-scala. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
+```yaml
+# node.yml
+scala:
+  # target scala version
+  version: 2.12.3
+```
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Itamae::Plugin::Recipe::Scala project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/itamae-plugin-recipe-scala/blob/master/CODE_OF_CONDUCT.md).
