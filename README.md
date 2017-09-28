@@ -36,7 +36,7 @@ include_recipe "scala::install"
 # node.yml
 scala:
   # target scala version
-  version: 2.12.3
+  version: 2.12.2
 ```
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
