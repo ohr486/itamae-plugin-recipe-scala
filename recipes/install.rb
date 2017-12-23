@@ -1,1 +1,1 @@
-include_recipe "scala::install"
+include_recipe "scala::default"
